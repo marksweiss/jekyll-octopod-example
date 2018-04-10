@@ -26,12 +26,12 @@ To publish you use `octopod build` and then deploy using either `jekyll`'s docum
 
 ### Getting Site Search Working
 
-This project also helps you jumpstart Google site search, by including a `_plugins` folder with the excellent `json-feed-jekyll` plugin in place. The included `_config.yaml` includes entries to configure this plugin. Complete documentatio is [here](https://github.com/kaishin/json-feed-jekyll). To get site search working you need to do the following:
+This project also helps you jumpstart Google site search, by including a `_plugins` folder with the excellent `json-feed-jekyll` plugin in place. The included `_config.yaml` includes entries to configure this plugin. Complete documentation is [here](https://github.com/kaishin/json-feed-jekyll). To get site search working you need to do the following:
 
 * Create your initial content so you have something to index and something for users to search for
 * Run the `json-feed-jekyll` plugin to generate a `sitemap.xml` file in your project root
 * Sign up for a Google Search Console account and follow the instructions to provide your domain(s). Upload the `sitemap.xml` file you generated as instructed.
-* Wait a couple fo days
+* Wait a couple of days
 
 ### Starting With This -- Ending With Your Site
 
@@ -42,4 +42,4 @@ This project also helps you jumpstart Google site search, by including a `_plugi
 * Makes many changes to the sidebar include and layout, including adding a second RSS feed, moving the search box into the sidebar, adding a second Twitter link, displaying different text and displaying a different show log
 * Modifies the behavior of selected entries in listings to not hyperlink their title text
 
-This is the spirit in which you should use this project. Start with it, learn enough to control it, and build what you need. `jekyll` and `jekyll-octopod` are incredible projects. If you are a developer, you really should invest the modest amount of time to create the publishing setup that exactly fits your needs. The payoffs are a publishing workflow that is fast and minimal and lets you concentrate almost wholly on producing your content, and a savings of $10-40 a month vs. hosting a blog and podcast episodes with a commercial hosting service. You can build, deploy and serve a static site yourself on AWS or GCP for about $1.
+This is the spirit in which you should use this project. Start with it, learn enough to control it, and build what you need. `jekyll` and `jekyll-octopod` are incredible projects. If you are a developer, you really should invest the modest amount of time to learn to use them to create the publishing setup that exactly fits your needs. The payoffs are a publishing workflow that is fast and minimal and lets you concentrate almost wholly on producing your content, and a savings of $10-40 a month vs. hosting a blog and podcast episodes with a commercial hosting service.
