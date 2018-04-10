@@ -29,13 +29,13 @@ The underlying includes and templates will handle the following:
 This project also helps you jumpstart Google site search, by including a `_plugins` folder with the excellent `json-feed-jekyll` plugin in place. The included `_config.yaml` includes entries to configure this plugin. Complete documentation is [here](https://github.com/kaishin/json-feed-jekyll). To get site search working you need to do the following:
 
 * Create your initial content so you have something to index and something for users to search for
-* Run the `json-feed-jekyll` plugin to generate a `sitemap.xml` file in your project root
+* Run the `octopod build` which will cause the `json-feed-jekyll` plugin to generate a `sitemap.xml` file in your project root
 * Sign up for a Google Search Console account and follow the instructions to provide your domain(s). Upload the `sitemap.xml` file you generated as instructed.
 * Wait a couple of days
 
 ### Starting With This -- Ending With Your Site
 
-`jekyll` is useful to developers because it gives you a lot of control and features while requiring very little code from you. The cost is an expected one, lots of magic and layers of behavior you need to unravel to understand what is actually happening when you want to change what is happening. I can't help with you that, but this working example customizes many things relative to the default `jekyll-octopod` so you can learn from its code. Some examples among many:
+This working example also customizes many things relative to the default `jekyll-octopod` so you can learn from its code. Some examples:
 
 * Uses YAML front matter to customize the `podigee` audio player style
 * Customizes the icon in the browsable RSS feed
