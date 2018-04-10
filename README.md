@@ -10,15 +10,13 @@ This project is not a substitute for learning `jekyll` and `jekyll-octopod`. Bot
 
 ## What Unique Value Does This Project Provide?
 
-That said, it's better to start here (or with some other example site) than from scratch because you have a full working example, less any of your content, and some features are already in place for you.
-
-In particular, this project modifies the underlying jekyll files to support having two feeds on your site, one for podcast entries and one for blog entries. You will see the included `all_episodes.md` page is the listing page for podcast episodes, and the included `show_blog.md` page is the listing page for blog entries.
+This project modifies the underlying jekyll files to support having two feeds on your site, one for podcast entries and one for blog entries. You will see the included `all_episodes.md` page is the listing page for podcast episodes, and the included `show_blog.md` page is the listing page for blog entries.
 
 To create new podcast episodes, copy the provided `_posts/sample_episode.md` file, give it a name like `my_first_episode.md`, and modify the front matter appropriately. Copy your episode audio file into the `episodes` folder. The name of your audio file must match the value you provide for the key `audio` in the `my_first_episode.md` file YAML front matter.
 
 To create new blog posts, copy the provided `_posts/sample_post`, and again rename and modify the front matter as desired.
 
-To publish you use `octopod build` and then deploy using either `jekyll`'s documented methods or your own. (I host on Google Cloud Platform and use a custom shell script to use `gcutils` `rsync` to deploy. YMMV.) The underlying includes and templates will handle the following:
+The underlying includes and templates will handle the following:
 
 * episodes list in the episode feed which can be reached through the `all_episodes` page
 * blog posts list in the blog feed which can be reached through the `blog` page
