@@ -2,6 +2,8 @@
 
 If you are an engineer thinking about launching a blog and/or podcast, this project is a great place to start. It really shines if you want to have a single unified web site for both a podcast feed and a blog feed. `jekyll` is a great static site generator for blogs. `jekyll-octopod` is a great `jekyll` plugin that adds almost everything you need to extend `jekyll` for hosting a podcast. But neither supports one site that have a separate blog and podcast feed. This modification/example does.
 
+Here is a [working example](http://www.usingreflection.com).
+
 This project is not intended to be a substitute for learning `jekyll` and `jekyll-octopod`. Both projects have excellent online documentation. To get started [install jekyll](https://jekyllrb.com/docs/installation/), then go to the excellent [jekyll-octopod site](https://jekyll-octopod.github.io/) and follow the installation instructions. Then come back here, clone this repo into a directory, and start hacking.
 
 So this project also assumes you are developer. You will figure out how to change images, links, HTML, SASS and jekyll's `Liquid` templating code.
