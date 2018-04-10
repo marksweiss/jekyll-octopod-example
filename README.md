@@ -4,9 +4,9 @@ If you are an engineer thinking about launching a blog and/or podcast, this proj
 
 Here is a [working example](http://www.usingreflection.com).
 
-This project is not intended to be a substitute for learning `jekyll` and `jekyll-octopod`. Both projects have excellent online documentation. To get started [install jekyll](https://jekyllrb.com/docs/installation/), then go to the excellent [jekyll-octopod site](https://jekyll-octopod.github.io/) and follow the installation instructions. Then come back here, clone this repo into a directory, and start hacking.
+The intent of this sample project is to give you a jump start.  Start with it, learn enough to control it, and build what you need. If you are a developer, you really should invest the modest amount of time to learn to use them to create the publishing setup that exactly fits your needs. The payoffs are a publishing workflow that is fast and minimal and lets you concentrate almost wholly on producing your content, and a savings of $10-40 a month vs. hosting and serving a blog and podcast episodes with a commercial hosting service.
 
-So this project also assumes you are developer. You will figure out how to change images, links, HTML, SASS and jekyll's `Liquid` templating code.
+This project is not a substitute for learning `jekyll` and `jekyll-octopod`. Both projects have excellent online documentation. To get started [install jekyll](https://jekyllrb.com/docs/installation/), then go to the excellent [jekyll-octopod site](https://jekyll-octopod.github.io/) and follow the installation instructions. Then come back here, clone this repo into a directory, and start hacking.
 
 ## What Unique Value Does This Project Provide?
 
@@ -43,5 +43,3 @@ This project also helps you jumpstart Google site search, by including a `_plugi
 * Customizes the icon in the browsable RSS feed
 * Makes many changes to the sidebar include and layout, including adding a second RSS feed, moving the search box into the sidebar, adding a second Twitter link, displaying different text and displaying a different show log
 * Modifies the behavior of selected entries in listings to not hyperlink their title text
-
-This is the spirit in which you should use this project. Start with it, learn enough to control it, and build what you need. `jekyll` and `jekyll-octopod` are incredible projects. If you are a developer, you really should invest the modest amount of time to learn to use them to create the publishing setup that exactly fits your needs. The payoffs are a publishing workflow that is fast and minimal and lets you concentrate almost wholly on producing your content, and a savings of $10-40 a month vs. hosting a blog and podcast episodes with a commercial hosting service.
