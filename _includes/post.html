@@ -1,0 +1,40 @@
+{% if post.post_type == 'pod' %}
+  <section id="{{ post.id | sha1:8 }}" class="active">
+    {% include first_post_header.html %}
+    <div style="float: left; width: 40%; align: center; vertical-align: middle; padding: 0px;">
+      {% if post.headshot %}
+        <img src="/img/{{ post.headshot }}" />
+      {% endif %}
+    </div>
+    <div style="float: left; width: 5%;"></div>
+    <p/>
+    <div style="float: right; width: 55%; align: center; vertical-align: middle; padding: 0px;">
+      {% if post.company_logo %}
+        <img src="/img/{{ post.company_logo }}" />
+      {% endif %}
+    </div>
+    <div style="clear: both;"></div>
+    <hr>
+    <!-- <div><strong>Share this Episode</strong><br/><a href="https://twitter.com/share" class="twitter-share-button" data-url="{{ site.url }}{{post.url }}" data-text="{{ post.title }}">Share this Episode</a></div> -->
+    {% if post.itunes_episode_link %}
+      <a href="{{ post.itunes_episode_link }}"><strong>Listen to this episode on iTunes/Apple Podcasts</strong></a>
+    {% endif %}
+    {% if post.google_play_episode_link %}
+      <p/>
+      <a href="{{ post.google_play_episode_link }}"><strong>Listen to this episode on Android/Google Play</strong></a>
+      <p/>
+    {% endif %}
+    {% if post.audio %}
+      {% for file in post.audio %}
+        <a class="btn btn-primary" href="{{ site | download_url_with_fallback }}/{{ file.last }}">Download .{{ file.first }} ({{ file.last | file_size:'./' | string_of_size }})</a>
+        <div><p/></div>
+      {% endfor %}
+    {% endif %}
+    <small>Player by <a href="https://www.podigee.com/en/podcast-player/">Podigee</a></small><br/>
+    {{ post.content }}
+    {{ site | flattr_button:post }}
+    {% unless page.url == '/index.html' %}{% include disqus_thread.html %}{% endunless %}
+    {% unless page.url == '/index.html' %}{% include isso_thread.html %}{% endunless %}
+    <hr>
+  </section>
+{% endif %}

@@ -1,0 +1,12 @@
+---
+layout: with_twitter_card
+---
+{% for post in site.posts %}
+  {% if post.post_type == 'pod' %}
+    {% if post.url == page.url %}
+      {% include post.html %}
+    {% else %}
+      {% include post_line.html %}
+    {% endif %}
+  {% endif %}
+{% endfor %}

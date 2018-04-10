@@ -1,0 +1,6 @@
+{% if post.post_type == 'blog' %}
+  <section id="{{ post.id | sha1:8 }}" class="active">
+    {% include first_post_header.html %}
+    {{ post.content }}
+  </section>
+{% endif %}

@@ -1,0 +1,107 @@
+// Improve visibility of subtitles and similar text by increasing contrast
+h1 small, h2 small, small {
+  color: #77778C;
+}
+
+a {
+  color: #800003;
+}
+
+btn small, .btn small {
+  color: #2A2A2A;
+}
+
+// Making the date smaller improves the episode header when it includes the subtitle
+.episode_date {
+  font-size: 45%;
+}
+
+// Theme for the Swiss-Sided Dice podcast, red and white based on the Swiss flag - commented out for now, until a better solution can be found
+
+// Main navbar background
+// The "brand" / podcast title doesn't change on hover, but does keep the text white
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover {
+  font-size: 100%;
+  color: #FFF;
+}
+.navbar-default {
+  background-color: #796A3E;
+  font-size: 100%;
+  color: #FFF;
+  border: 0;
+}
+// Hovering over navbar links, keep the text white, but add darker background
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > li > a {
+  color: #FF0000;
+  // color: #2e9c81;
+  background-color: #E11A27;
+}
+
+// These two classes together control the sidebar style
+.col-sm-4 {
+  background-color: #796A3E;
+}
+.well {
+  background-color: #796A3E;
+  color: #EEEEEE;
+  border: 0px;
+  // border: 1px solid #e3e3e3;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05);
+  box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+.page_header {
+  color: #EEEEEE;
+}
+
+body {
+  font-family: Ubuntu, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #57481C;
+  background-color: #DCD4BC;
+}
+// .body {
+//   background-color: #DCD4BC;
+// }
+
+/*
+*/
+
+/*
+// This is for the menu button on narrow screens
+.navbar-default .navbar-toggle {
+  background-color: #E11A27;
+  border-color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #FFF;
+}
+
+// Darker background, keep rest white
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: #A5131D;
+  border-color: #FFF;
+  color: #FFF;
+}
+
+// Links and buttons in the website are a dark red for best contrast, but get lightened on hover for feedback
+a {
+  color: #CF000F;
+}
+a:hover {
+  color: #EF3743;
+}
+.btn-primary {
+  background-color: #CF000F;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #EF3743;
+}
+*/

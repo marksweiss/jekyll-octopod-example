@@ -1,0 +1,133 @@
+<div align="left">
+<form class="navbar-form navbar-left" action="https://google.com/search" method="get" role="search">
+  <div class="form-group">
+    <input type="text" name="q" class="form-control" placeholder="search this site" value="">
+    <input type="hidden" name="q" value="site:{{ site.url | host_from_url }}" />
+  </div>
+  <button type="submit" class="btn btn-default">Search</button>
+</form>
+</div>
+<br/><p/>
+<div class="page-header">
+  <h3>
+    {{ site.title }}
+    {% if site.subtitle %}<br/><small>{{ site.subtitle }}</small>{% endif %}
+  </h3>
+</div>
+
+<p class="text-center">
+  <img width="200px" src="{{ site.url }}/img/using_reflection_logo_small.png" alt="{{ site.title }} logo">
+</p>
+
+{% if site.description %}<p>{{ site.description }}</p>{% endif %}
+{% if site.author %}Hosted by {{ site.author }}{% endif %}
+
+<p class="text-center">
+  <script class="podlove-subscribe-button"
+          src="https://cdn.podlove.org/subscribe-button/javascripts/app.js"
+          data-language="{{ site.language }}"
+          data-size="medium"
+          data-json-data="podcastData"
+          data-colors="#FC6E51;green;blue"
+          data-buttonid="123abc"
+          data-hide="false">
+  </script>
+  <script>
+    window.podcastData = {
+      "title": "{{ site['title']}}",
+      "subtitle": "{{ site['subtitle']}}",
+      "description": "{{ site['description']}}",
+      "cover": "{{ site.url }}/img/logo-360x360.png",
+      "feeds": [
+      {% for feed in site['episode_feed_formats'] %}
+        {
+          "type": "audio",
+          "format": "{{ feed }}",
+          "url": "{{ site['url']}}/episodes.{{ feed }}.rss",
+          "directory-url-itunes": "{{ site['itunes_url']}}",
+          "variant": "high"
+        },
+      {% endfor %}
+      ]
+    }
+  </script>
+</p>
+
+<hr/>
+
+<div align="center">
+Subscribe to Podcast in Your App Store<p/><br/>
+<a href="https://itunes.apple.com/us/podcast/using-
+~  58 reflection/id1294155220?mt=2"><img src="https://static1.squarespace.com/static/54833f25e4b05657e7b424f8/t/59dc6ca5a8b2b02864ce02af/1508997084857/subscribe_apple.png?format=original" /></a>
+</div>
+<p/>
+<div align="center">
+<a href="https://play.google.com/music/listen#/ps/Is5cvsqetiqj2g6aev2nqu726x"><img src="https://static1.squarespace.com/static/54833f25e4b05657e7b424f8/t/59dc6fe68fd4d2e11c8f7127/1507618914943/gcloud.png?format=original" /></a>
+</div>
+
+<div align="center">
+<br/>
+{% for feed in site['episode_feed_formats'] %}
+  <a href="{{ site['url']}}/episodes.{{ feed }}.rss"><i class="fa fa-rss"></i>&nbsp;Subscribe to Podcast by RSS</a><br/>
+{% endfor %}
+<a href="{{ site['url']}}/feed.rss"><i class="fa fa-rss"></i>&nbsp;Subscribe to Blog by RSS</a><br/>
+</div>
+<hr>
+<!-- <h4>JSON-Feeds</h4> -->
+
+<!-- <ol type="i"> -->
+<!--   {% for jsonfeed in site['json_feed_formats'] %} -->
+<!--     <li><a href="{{ site['url']}}/feed.{{ jsonfeed }}.json"><i class="fa fa-rss-square"></i> {{ jsonfeed }}-JSON-Feed</a></li> -->
+<!--   {% endfor %} -->
+<!-- </ol> -->
+
+<!-- <h4>Directories</h4> -->
+<!-- {% if site.itunes_url %} -->
+<!--   <div align="center"> -->
+<!--   Listen on Mac and iPhone-<a href="{{ site.itunes_url }}"><i class="fa fa-apple"></i>Itunes</a> -->
+<!--   </div> -->
+<!-- {% endif %} -->
+  <!-- {% if site.bitlove_url %} -->
+  <!--   <li>as Torrents at <a href="{{ site.bitlove_url }}"><img src="https://bitlove.org/static/favicon.png"/> Bitlove</a></li> -->
+  <!-- {% endif %} -->
+  <!-- {% if site.fyyd_url %} -->
+  <!--   <li>at the podcast search engine <a href="{{ site.fyyd_url }}">Fyyd</a></li> -->
+  <!-- {% endif %} -->
+  <!-- {% if site.gpodder_url %} -->
+  <!--   <li>at <a href="{{ site.gpodder_url }}"><img src="https://gpodder.net/media/gpoddernet_64.png" height="16" /> Gpodder.net</a></li> -->
+  <!-- {% endif %} -->
+
+
+<!-- <h4>Credits</h4> -->
+
+<!-- <ul> -->
+<!--   <li>Music: <a href="https://photographs-msw.bandcamp.com/releases">Photographs</a></li> -->
+<!-- </ul> -->
+
+<!-- <h4>License</h4> -->
+
+<!-- {% if site.license_url %} -->
+<!--   <a rel="license" href="{{ site.license_url }}"> -->
+<!--     {% if site.license_image_url %} -->
+<!--       <img alt="Creative Commons License" style="border-width:0" src="{{ site.license_image_url }}" /> -->
+<!--     {% else %} -->
+<!--       {{ site.license }} -->
+<!--     {% endif %} -->
+<!--   </a> -->
+<!-- {% endif %} -->
+
+<!-- <hr/> -->
+
+{% if site.flattr_uid %}
+  <span class="pull-left">{{ site | flattr_button }}</span>
+{% endif %}
+
+{% if site.twitter_nick %}
+  <p/>
+  <div align="center">
+  <a href="https://twitter.com/{{ site.twitter_nick }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter_nick }}</a>
+  </div>
+  <div align="center">
+  <a href="https://twitter.com/marksweiss" class="twitter-follow-button" data-show-count="false">Follow @marksweiss</a>
+  </div>
+{% endif %}

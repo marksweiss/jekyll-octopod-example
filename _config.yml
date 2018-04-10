@@ -1,0 +1,90 @@
+# You have to configure this ###################################################
+title: YOUR TITLE
+# You should configure this ####################################################
+url: http://example.com
+# Add this dummy value so sitemap_generator.rb doesn't choke
+baseurl: ''
+# This setting prevents the completely annoying Jekyll convention of putting each episode on a permalink
+# path by YYYY/MM/DD/episode_name.html, and just puts it on episode_name.html.
+# Change if you prefer the default path treatment. Jekyll docs have more detail on options.
+permalink: /:title/
+# If this is left out the template will always play from {{ site.url }}/episodes, which will be localhost:4000
+# during testing and http://usingreflection.com in production
+# download_url: http://usingreflection.com/episodes
+subtitle: YOUR SUBTITLE 
+description: YOUR DESCRIPTION 
+author: YOUR AUTHOR 
+author_url: http://example.com
+email: YOU@YOU.com 
+keywords: [YOUR COMMA-SEPARATED LIST OF KEYWORDS]
+itunes_categories: [YOUR ITUNES CATEGORY]
+additional_feeds:
+#   itunes: http://itunes.apple.com/...
+# If you have more episodes look into Jekyll pagination plugins
+episodes_per_feed_page: 20
+# Date can be localized via date_de.rb plugin
+# Jekyll docs have more options
+date_format: "ordinal"
+# You need to generate a sitemap.xml file for Google to index your site and provide site search results
+# This plugin generates the sitemap in your project root.
+# sitemap_generator.rb Plugin Settings
+sitemap:
+  filename: "/sitemap.xml"
+  exclude:
+    - "/feed.xml"
+    - "/feed.m4a.json"
+    - "/feed.mp3.json"
+    - "/feed.ogg.json"
+    - "/general_feed.xml"
+    - "/episodes.mp3.rss"
+  # This setting works because parmalink is set tot /:title/. YMMV.
+  include_posts:
+    - "/index.html"
+# Octopod doesn't support two feeds, one for blog and one for podcast episodes. This smmple site does.
+# These settings are used only for the blog feed.
+# Blog post json feed settings, control behavior of feed.json
+json_feed:
+  user_comment: # Optional. A description of the purpose of the feed
+  # favicon: favicon.png # Optional. Relative path of the favicon in the source folder.
+  icon: # Relative path of the (larger) icon in the source folder.
+  author: # Optional. Info about the author. If not included site.author will be used.
+    name:  # Optional. Name of the author.
+    # url: https://redalemeden.com # Optional. Website of the author.
+    # avatar:
+    #   local_path: avatar.png # Optional. Relative path of the avatar in the source folder.
+    #   external_url: # Optional. External avatar URL. Takes precedence over the previous key.
+  expired: false # Optional. Should be set to true if the feed will no longer be updated.
+  use_category_as_tag: false # Optional. Set this to true to use post.category insteads of tags.
+  post_limit: 100 # Optional. Limit the number of posts per feed.
+  # hubs: # A list of hubs used to subscribe to real-time notifications
+  #   - type: "WebSub" # Type of the hub
+  #     url: "" # External URL of the hub
+## Rsync Deploy config #########################################################
+### Be sure your public key is listed in your server's ~/.ssh/authorized_keys
+### file.
+ssh_host: user@host.org
+ssh_port: 22
+document_root: /Users/markweiss/Documents/projects/podcast/webapp/usingreflection
+rsync_delete: true
+# You can configure this #######################################################
+twitter_nick: TWITTER HANDLE
+language: en
+explicit: 'no'  # 'yes'/'no'/clean
+license: CC BY 4.0
+## Flattr ######################################################################
+flattr_uid: # Flattr will not be used unless this is set
+flattr_button: compact # compact | default
+flattr_mode: auto # auto | manual(default)
+flattr_popout:  1 # 1 | 0 (show popout when hovering mouse over button)
+flattr_language: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
+flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
+## Disqus comments #############################################################
+disqus_shortname: # marksweiss # Disqus will not be used unless this is set
+disqus_developer: 0 # 1 / 0
+## Itunes link ###########################################################
+itunes_url: "https://itunes.apple.com/us/podcast/TITLE/id1234"
+## Isso comments #########################################################
+use_isso: no # set to 'yes' to include isso comments form
+
+plugins: [jekyll-octopod]
+theme: jekyll-bootflat
