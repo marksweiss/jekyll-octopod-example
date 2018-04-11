@@ -1,6 +1,6 @@
 ## Who is This For?
 
-If you are an engineer thinking about launching a blog and/or podcast, this project is a great place to start. It really shines if you want to have a single unified web site for both a podcast feed and a blog feed. `jekyll` is a great static site generator for blogs. `jekyll-octopod` is a great `jekyll` plugin that adds almost everything you need to extend `jekyll` for hosting a podcast. But neither supports one site that have a separate blog and podcast feed. This modification/example does.
+If you are an engineer thinking about launching a blog and/or podcast, this project is a great place to start. It really shines if you want to have a single unified web site for both a podcast feed and a blog feed. `jekyll` is a great static site generator for blogs. `jekyll-octopod` is a great `jekyll` plugin that adds almost everything you need to extend `jekyll` for hosting a podcast. But neither supports one site that has a separate blog and podcast feed. This modification/example does.
 
 Here is a [working example](http://www.usingreflection.com).
 
@@ -39,5 +39,5 @@ This working example also customizes many things relative to the default `jekyll
 
 * Uses YAML front matter to customize the `podigee` audio player style
 * Customizes the icon in the browsable RSS feed
-* Makes many changes to the sidebar include and layout, including adding a second RSS feed, moving the search box into the sidebar, adding a second Twitter link, displaying different text and displaying a different show log
+* Makes many changes to the sidebar include and layout, including adding a second RSS feed, moving the search box into the sidebar, adding a second Twitter link, displaying different text and displaying a different show logo
 * Modifies the behavior of selected entries in listings to not hyperlink their title text
