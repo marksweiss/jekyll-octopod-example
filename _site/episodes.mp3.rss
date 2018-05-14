@@ -1,0 +1,149 @@
+<?xml version="1.0"
+      encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:bitlove="http://bitlove.org"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/"
+     xmlns:psc="http://podlove.org/simple-chapters"
+     version="2.0">
+
+  <channel>
+    <title>YOUR TITLE</title>
+    <link>http://localhost:4000</link>
+    <atom:link href="http://localhost:4000/episodes.mp3.rss" rel="self" type="application/rss+xml" title="mp3 Episode RSS-Feed"/>
+    <atom:link href="http://localhost:4000/episodes.mp3.rss" rel="first" type="application/rss+xml" />
+    <atom:link href="http://localhost:4000/episodes.mp3.rss" rel="last" type="application/rss+xml" />
+    
+    
+
+    
+    <description>YOUR DESCRIPTION
+</description>
+    <lastBuildDate>Sun, 13 May 2018 21:01:14 -0400</lastBuildDate>
+    <language>en</language>
+    <generator>Jekyll-Octopod 0.9.4</generator>
+
+    <itunes:summary>YOUR DESCRIPTION
+</itunes:summary>
+    <itunes:author>YOUR AUTHOR</itunes:author>
+    <itunes:explicit>no</itunes:explicit>
+    <itunes:image href="http://localhost:4000/img/using_reflection_logo_small.jpg" />
+    <itunes:owner>
+      <itunes:name>YOUR AUTHOR</itunes:name>
+      <itunes:email>YOU@YOU.com</itunes:email>
+    </itunes:owner>
+    <managingEditor>YOU@YOU.com (YOUR AUTHOR)</managingEditor>
+    <copyright>CC BY 4.0</copyright>
+    <itunes:subtitle>YOUR SUBTITLE</itunes:subtitle>
+    <itunes:keywords>YOUR COMMA-SEPARATED LIST OF KEYWORDS</itunes:keywords>
+    <image>
+      <title>YOUR TITLE</title>
+      <url>http://localhost:4000/img/using_reflection_logo_small.jpg</url>
+      <link>http://localhost:4000</link>
+    </image>
+    
+    <itunes:category text="YOUR ITUNES CATEGORY" />
+    
+    
+    
+      
+    
+      
+        
+        
+          <item>
+            <title>Eli Goodman - Doing Good and Stopping Time</title>
+            <link>http://localhost:4000/Eli_Goodman_-_Doing_Good_and_Stopping_Time/</link>
+            <atom:link rel="http://podlove.org/deep-link" href="http://localhost:4000/players/Eli_Goodman_-_Doing_Good_and_Stopping_Time"/>
+            <comments>http://localhost:4000/Eli_Goodman_-_Doing_Good_and_Stopping_Time/#disqus_thread</comments>
+            <pubDate>Sat, 09 Sep 2017 00:00:00 -0400</pubDate>
+            
+            <guid isPermaLink="false">http://localhost:4000/Eli_Goodman_-_Doing_Good_and_Stopping_Time/</guid>
+            <description><![CDATA[
+
+<h3 id="show-notes">Show Notes</h3>
+
+<p><strong>Topics:</strong> Continuous Delivery, Managing Engineers, Meditation, Social
+Responsibility, Software Engineering, Teamwork, Team Leadership</p>
+
+<p><strong>Companies:</strong> Headspace, Wireless Generation</p>
+
+<p><strong>Introduction</strong></p>
+
+<p>In this episode we are joined by Eli Goodman, lead platform engineer at
+Headspace. Eli discusses his desire to have world-changing impact, and the
+responsibility that he feels comes with the privilege of being an engineer in
+this era of small teams able to touch millions of lives. We also go deep on
+how perceptions of time shape a team’s approach to productivity, and examine
+the many facets and subtle psychology of truly “continuous” continuous
+delivery.</p>
+
+<p><strong>Guest Bio</strong></p>
+
+<p>Eli Goodman is a lead platform engineer at Headspace. Previously, he was the
+CTO of Union Station and a Director of Engineering at Etsy. In his non-
+computer time, he’s way into ecstatic dance, hiking, visual art, and plants.
+He lives in Los Angeles with his kitten, Benji.</p>
+
+<p><strong>Credits</strong></p>
+
+<ul>
+  <li>Host: Mark S. Weiss</li>
+  <li>Intro and Outro Music: “Florida Song” Copyright 2016 by Photographs (Mark S. Weiss). All rights reserved.</li>
+  <li>Ad Intro Music: “Woozy” Copyright 2015 by Photographs (Mark S. Weiss). All rights reserved.</li>
+  <li>All Interview content Copyright 2018 by Using Reflection and Mark S. Weiss. All rights reserved.</li>
+</ul>
+]]></description>
+            <content:encoded><![CDATA[
+
+<h3 id="show-notes">Show Notes</h3>
+
+<p><strong>Topics:</strong> Continuous Delivery, Managing Engineers, Meditation, Social
+Responsibility, Software Engineering, Teamwork, Team Leadership</p>
+
+<p><strong>Companies:</strong> Headspace, Wireless Generation</p>
+
+<p><strong>Introduction</strong></p>
+
+<p>In this episode we are joined by Eli Goodman, lead platform engineer at
+Headspace. Eli discusses his desire to have world-changing impact, and the
+responsibility that he feels comes with the privilege of being an engineer in
+this era of small teams able to touch millions of lives. We also go deep on
+how perceptions of time shape a team’s approach to productivity, and examine
+the many facets and subtle psychology of truly “continuous” continuous
+delivery.</p>
+
+<p><strong>Guest Bio</strong></p>
+
+<p>Eli Goodman is a lead platform engineer at Headspace. Previously, he was the
+CTO of Union Station and a Director of Engineering at Etsy. In his non-
+computer time, he’s way into ecstatic dance, hiking, visual art, and plants.
+He lives in Los Angeles with his kitten, Benji.</p>
+
+<p><strong>Credits</strong></p>
+
+<ul>
+  <li>Host: Mark S. Weiss</li>
+  <li>Intro and Outro Music: “Florida Song” Copyright 2016 by Photographs (Mark S. Weiss). All rights reserved.</li>
+  <li>Ad Intro Music: “Woozy” Copyright 2015 by Photographs (Mark S. Weiss). All rights reserved.</li>
+  <li>All Interview content Copyright 2018 by Using Reflection and Mark S. Weiss. All rights reserved.</li>
+</ul>
+]]></content:encoded>
+            
+            <enclosure url="http://localhost:4000/episodes/ep_0001_eli_goodman.mp3" length="91092899" type="audio/mpeg" />
+            <itunes:keywords></itunes:keywords>
+            <itunes:subtitle>Doing Good and Stopping Time</itunes:subtitle>
+            <itunes:summary></itunes:summary>
+            <itunes:author>Mark Weiss</itunes:author>
+            <itunes:explicit>no</itunes:explicit>
+            <itunes:duration>00:47:26</itunes:duration>
+            
+            
+            
+            
+          </item>
+        
+      
+    
+  </channel>
+</rss>

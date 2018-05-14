@@ -3,4 +3,4 @@ title: Home
 layout: default
 ---
 
-SOME CONTENT GOES HERE
+HOME PAGE CONTENT GOES HERE

@@ -12,6 +12,9 @@
       {% if post.company_logo %}
         <img src="/img/{{ post.company_logo }}" />
       {% endif %}
+      {% if post.drop_quote %}
+        <br/><br/><i>"{{ post.drop_quote }}"</i>
+      {% endif %}
     </div>
     <div style="clear: both;"></div>
     <hr>

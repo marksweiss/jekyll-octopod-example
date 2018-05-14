@@ -9,8 +9,7 @@ baseurl: ''
 # Change if you prefer the default path treatment. Jekyll docs have more detail on options.
 permalink: /:title/
 # If this is left out the template will always play from {{ site.url }}/episodes, which will be localhost:4000
-# during testing and http://usingreflection.com in production
-# download_url: http://usingreflection.com/episodes
+# during testing and http://YOUR_URL in production
 subtitle: YOUR SUBTITLE 
 description: YOUR DESCRIPTION 
 author: YOUR AUTHOR 
@@ -79,10 +78,10 @@ flattr_popout:  1 # 1 | 0 (show popout when hovering mouse over button)
 flattr_language: en_GB # available languages - https://api.flattr.com/rest/v2/languages.txt
 flattr_category: audio # available categories - https://api.flattr.com/rest/v2/categories.txt
 ## Disqus comments #############################################################
-disqus_shortname: # marksweiss # Disqus will not be used unless this is set
+disqus_shortname: # Disqus will not be used unless this is set
 disqus_developer: 0 # 1 / 0
 ## Itunes link ###########################################################
-itunes_url: "https://itunes.apple.com/us/podcast/TITLE/id1234"
+itunes_url: "https://itunes.apple.com/us/podcast/YOUR_PODCAST_TITLE/id1234"
 ## Isso comments #########################################################
 use_isso: no # set to 'yes' to include isso comments form
 
