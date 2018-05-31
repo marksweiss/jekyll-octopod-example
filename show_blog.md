@@ -15,7 +15,7 @@ order: 5
   {% endif %}
 {% endfor %}
 
-{% include blog_post.html %}
+{% include post.html %}
 
 {% for post in site.posts -%}
   {% if post.post_type == 'blog' and post.url != current_post.url -%}

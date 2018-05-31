@@ -1,7 +1,6 @@
-<div class="page-header">
-  <h2>
+<div class="page-header"><a name="{{ post.id | remove_first: "/" }}_jump">{{ post.date | date_to_string }}</a>
+  <h3>
     <a class='episode_title' href='{{ site.url }}{{ post.url }}#{{ post.id | sha1:8 }}'>{{ post.title }}</a><br />
     <a class='episode_title' href='{{ site.url }}{{ post.url }}#{{ post.id | sha1:8 }}'>{{ post.subtitle }}</a><br />
-  </h2>
-    {{ post.date | date_to_string }}
+  </h3>
 </div>
